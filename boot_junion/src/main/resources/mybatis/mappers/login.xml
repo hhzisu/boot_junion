@@ -1,0 +1,14 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.boot.DAO.LoginDAO">
+
+    <select id="loginynI" resultType="com.boot.DTO.LoginDTO">
+    	select user_pw from user_tb where user_email=#{user_email};
+    </select>
+    <select id="loginynC" resultType="com.boot.DTO.LoginDTO">
+    	select com_pw from com_tb where com_email=#{com_email};
+    </select>
+    
+</mapper>
